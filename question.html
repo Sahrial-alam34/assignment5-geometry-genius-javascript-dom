@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answer Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6 underline">Welcome To Question Answer Section <span
+                class="font-semibold text-violet-600">Answer the all question</span>!!!</h1>
+    </header>
+    <main>
+        <div class=" flex flex-col md:flex-row lg:flex-row mt-5">
+            <div class="w-full md:w-[85%] lg:w-[85%] grid md:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div>
+                    <figure><img class="w-fit mx-5 my-5 shadow-lg" src="/images/question.png" alt="Question"/></figure>
+                </div>
+               
+                <div class="card card-compact w-full bg-gray-300 mx-auto ">
+                  <h2 class="card-title text-center underline">Question And Answer!!</h2>
+                  <div class="ml-5 mt-5">
+                    <h1> 1. What is DOM ? What is the purpose of DOM ? </h1>
+                    <h1> Answer: The HTML DOM is an object model that used in HTML section as programming interface. It looks like a logical tree. DOM represents a documents as nodes and object. When a web browser parses an HTML document,it builds a DOM tree and then uses it to display the document. </h1>
+                  </div>
+                  <div class="ml-5 mt-5">
+                    <h1> 2. How to select elements from DOM ? </h1>
+                    <h1> Answer: There five ways for select:
+                        a. getElementsByTagName().
+                        b. getElementsByClassName().
+                        c. getElementById().
+                        d. querySelector().
+                        e. querySelectorAll().
+                     </h1>
+                  </div>
+                  <div class="ml-5 mt-5">
+                    <h1> 3. What event bubbles ? </h1>
+                    <h1> Answer: When a an event is in an element inside another element. Both elements bounded for that event. It is a process which starts with the element that triggered the event and then bubbles up to the containing elements in the down or hierarchy. </h1>
+                  </div>
+                  <div class="ml-5 mt-5">
+                    <h1> 4. What call back function ? How to works it ? </h1>
+                    <h1> Answer: A function which used for passed as an arguments to another function. It runs after another function has finished. It passed another function parameters as value not function type. When we call a function, we can control this function.</h1>
+                  </div>
+                </div>
+              </div>
+        </div>
+      
+    </main>
+</body>
+</html>
