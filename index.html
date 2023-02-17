@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius </title>
+    <!-- daisyUI tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/e6f24d98eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- header section -->
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12 bg-blue-100">
+            <div class="flex-1">
+                <div>
+                    <h1 class="font-semibold text-3xl">Interactive</h1>
+                    <h3>Geometry Genius</h3>
+                </div>
+            
+            </div>
+            <div class="flex-none">
+                <div class="navbar-end ">
+                    <a class="btn bg-blue-600 hover:bg-black border-none">Blog</a>
+                  </div>
+            </div>
+          </div>  
+    </header>
+
+    <main>
+        <div class=" flex flex-col md:flex-row lg:flex-row mt-5">
+            <div class="w-full md:w-[65%] lg:w-[65%] grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+                <!-- 1st card -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/triangle.png" alt="Triangle" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Triangle</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="b" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="h" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 2nd card -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/rectangle.png" alt="Rectangle" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Rectangle</h2>
+                  <p>Area (A) = w x l</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="w" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="l" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd card -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/parallelogram.png" alt="Parallelogram" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="b" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="h" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4th card -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/rhombus.png" alt="Rhombus" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Rhombus</h2>
+                  <p>Area (A) = 0.5 x d1 x d2</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="d1" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="d2" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 5th -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/pentagon.png" alt="Pentagon" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Pentagon</h2>
+                  <p>Area (A) = 0.5 x p x b</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="p" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="b" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 6th -->
+              <div class="card card-compact w-full bg-base-100 shadow-xl">
+                <figure><img class="w-fit mx-5 my-5" src="images/ellipse.png" alt="Ellipse" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title justify-around font-bold" id="product-name">Ellipse</h2>
+                  <p>Area (A) = π  x a x b</p>
+                  <div class="grid grid-cols-4">
+                    <input id="price" type="text" placeholder="a" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                    <input id="quantity" type="text" placeholder="b" class="input input-bordered input-info w-full max-w-xs" />
+                    <h1 class=" text-2xl">cm</h1>
+                  </div>
+                
+                  <div class="card-actions mt-5">
+                    <button id="fifth-card-butt" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+             
+             <!-- display list -->
+             
+            </div>
+            <div class="card card-compact w-full md:w-[30%] lg:w-[30%] bg-gray-300 mx-auto">
+              <h2 class="text-3xl text-center font-bold underline mt-5">Area Calculation</h2>
+              <div class="mx-20 mt-5">
+                <div class="overflow-x-auto ">
+                  <table class="table w-full ">
+                    <!-- head -->
+                    <thead >
+                     
+                    </thead>
+                    <tbody id="table-container" class="text-black ">
+                      <!-- row 1 -->
+                      <!-- <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    
+</body>
+</html>
