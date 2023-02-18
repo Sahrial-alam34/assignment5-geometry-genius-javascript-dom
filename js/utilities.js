@@ -25,15 +25,33 @@ function displayList(elementName, totalArea) {
     tr.innerHTML = `
     <td>${serial}</td>
     <td>${elementName}</td>
-    <td>${totalArea} cm<sup>2</sup></td>
+    <td id="total-area"><div class="grid grid-cols-2">
+    ${totalArea}<h3 class="cMeter">cm<sup>2</sup></h3>
+    </div>
+     </td>
     <td>
-    <button class="btn btn-primary btn-sm ">Covert to m<sup>2</sup></button>
+    <button id="cm-to-m" class="btn btn-primary btn-sm ">Covert to m<sup>2</sup></button>
     </td>
     
   `;
     container.appendChild(tr);
+   
+
+    // Convert centimeter to meter
+    document.getElementById('cm-to-m').addEventListener('click',function(){
+        const convertCmToM = (totalArea * 0.0001).toFixed(4);
+        
+        document.getElementById('total-area').innerText = convertCmToM;
+        
+        
+       
+        
+    })
   
 }
+
+
+
 
 // validation check 
 
