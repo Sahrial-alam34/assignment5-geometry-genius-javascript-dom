@@ -25,10 +25,7 @@ function displayList(elementName, totalArea) {
     tr.innerHTML = `
     <td>${serial}</td>
     <td>${elementName}</td>
-    <td>${totalArea}</td>
-    <td>cm<sup>2</sup></td>
-    
-   
+    <td>${totalArea} cm<sup>2</sup></td>
     <td>
     <button class="btn btn-primary btn-sm ">Covert to m<sup>2</sup></button>
     </td>
@@ -36,6 +33,18 @@ function displayList(elementName, totalArea) {
   `;
     container.appendChild(tr);
   
+}
+
+// validation check 
+
+function validationCheck(elementWeight, elementHeight){
+    if(elementWeight =='' ||elementHeight== '' || elementWeight <=0 || elementHeight <=0){
+        return true;
+        
+      }
+      if(isNaN(elementWeight) || isNaN(elementHeight)){
+        return true;
+      }
 }
 
 
