@@ -26,12 +26,11 @@ function displayList(elementName, totalArea) {
     
     <td>${serial}</td>
     <td>${elementName}</td>
-    <td id="total-area"><div class="grid grid-cols-2">
-    ${totalArea}<h3 class="cMeter">cm<sup>2</sup></h3>
-    </div>
+    <td id="total-area">
+    ${totalArea}<small>cm<sup>2</sup></small>
      </td>
     <td>
-    <button id="cm-to-m" class="btn btn-primary btn-sm ">Covert to m<sup>2</sup></button>
+    <button id="cm-to-m" class="btn btn-sm btn-primary normal-case">Covert to m<sup>2</sup></button>
     </td>
     
     
@@ -48,9 +47,9 @@ function displayList(elementName, totalArea) {
        
         <td>${serial}</td>
         <td>${elementName}</td>
-        <td id="total-area"><div class="grid grid-cols-2">
-        ${convertCmToM }<h3 class="cMeter">m<sup>2</sup></h3>
-        </div>
+        <td id="total-area">
+        ${convertCmToM }<small>m<sup>2</sup></small>
+        
          </td>
          <td>
         </td>
