@@ -23,6 +23,7 @@ function displayList(elementName, totalArea) {
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML = `
+    
     <td>${serial}</td>
     <td>${elementName}</td>
     <td id="total-area"><div class="grid grid-cols-2">
@@ -33,6 +34,7 @@ function displayList(elementName, totalArea) {
     <button id="cm-to-m" class="btn btn-primary btn-sm ">Covert to m<sup>2</sup></button>
     </td>
     
+    
   `;
     container.appendChild(tr);
    
@@ -40,15 +42,47 @@ function displayList(elementName, totalArea) {
     // Convert centimeter to meter
     document.getElementById('cm-to-m').addEventListener('click',function(){
         const convertCmToM = (totalArea * 0.0001).toFixed(4);
+        //conCmToM(serial, elementName, convertCmToM);
+        //document.getElementById('total-area').innerText = convertCmToM;
+       tr.innerHTML = `
+       
+        <td>${serial}</td>
+        <td>${elementName}</td>
+        <td id="total-area"><div class="grid grid-cols-2">
+        ${convertCmToM }<h3 class="cMeter">m<sup>2</sup></h3>
+        </div>
+         </td>
+         <td>
+        </td>
+       
         
-        document.getElementById('total-area').innerText = convertCmToM;
-        
-        
+      `;
+        container.appendChild(tr);
        
         
     })
-  
+    // function conCmToM(serial, elementName,convertCmToM){
+    //     tr.innerHTML = `
+       
+    
+    //     <td>${serial}</td>
+    //     <td>${elementName}</td>
+    //     <td id="total-area"><div class="grid grid-cols-2">
+    //     ${convertCmToM }<h3 class="cMeter">m<sup>2</sup></h3>
+    //     </div>
+    //      </td>
+    //      <td>
+        
+    //     </td>
+       
+        
+    //   `;
+    //     container.appendChild(tr); 
+    // }
+    
+    
 }
+
 
 
 

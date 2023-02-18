@@ -15,6 +15,7 @@ document.getElementById('first-card-butt').addEventListener('click',function(){
     //console.log(typeof totalArea);
     displayList(element.elementName, totalArea);
 })
+// first card section color change
 document.getElementById('first-card-color').addEventListener('mouseover', function () {
     
     // for change color
@@ -42,6 +43,15 @@ document.getElementById('second-card-butt').addEventListener('click', function (
     
 })
 
+// second card section color change
+document.getElementById('second-card-color').addEventListener('mouseover', function () {
+    
+    // for change color
+    colorCardSection('second-card-color');
+
+
+})
+
 // third card section
 
 document.getElementById('third-card-butt').addEventListener('click',function(){
@@ -57,6 +67,15 @@ document.getElementById('third-card-butt').addEventListener('click',function(){
     const totalArea = ((parseFloat(element.elementHeight)) * (parseFloat(element.elementWeight))).toFixed(2);
     //console.log(typeof totalArea);
     displayList(element.elementName, totalArea);
+})
+
+// third card section color change
+document.getElementById('third-card-color').addEventListener('mouseover', function () {
+    
+    // for change color
+    colorCardSection('third-card-color');
+
+
 })
 
 // fourth card section
@@ -76,6 +95,16 @@ document.getElementById('fourth-card-butt').addEventListener('click',function(){
     displayList(element.elementName, totalArea);
 })
 
+// fourth card section color change
+document.getElementById('fourth-card-color').addEventListener('mouseover', function () {
+    
+    // for change color
+    colorCardSection('fourth-card-color');
+
+
+})
+
+
 // fifth card section
 
 document.getElementById('fifth-card-butt').addEventListener('click',function(){
@@ -91,6 +120,15 @@ document.getElementById('fifth-card-butt').addEventListener('click',function(){
     const totalArea = (0.5* (parseFloat(element.elementHeight)) * (parseFloat(element.elementWeight))).toFixed(2);
     //console.log(typeof totalArea);
     displayList(element.elementName, totalArea);
+})
+
+// fifth card section color change
+document.getElementById('fifth-card-color').addEventListener('mouseover', function () {
+    
+    // for change color
+    colorCardSection('fifth-card-color');
+
+
 })
 
 // sixth card section
@@ -109,7 +147,14 @@ document.getElementById('sixth-card-butt').addEventListener('click',function(){
     //console.log(typeof totalArea);
     displayList(element.elementName, totalArea);
 })
+// sixth card section color change
+document.getElementById('sixth-card-color').addEventListener('mouseover', function () {
+    
+    // for change color
+    colorCardSection('sixth-card-color');
 
+
+})
 
 
 
